@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="format-detection" content="telephone=no,email=no,address=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#b8232f">
+<meta name="description" content="十一期间延吉中文推广活动，吉林省语文老师可携带一位伙伴免费旅行，每日最高500元现金补助。">
+<title>延吉中文推广活动 · 吉林省语文教师免费旅行</title>
+<style>
+:root{
+  --red:#b8232f;
+  --red-2:#d94452;
+  --gold:#c9982a;
+  --gold-2:#e8b339;
+  --jade:#2e7d6e;
+  --ink:#1c2028;
+  --ink-2:#5a6474;
+  --ink-3:#8d97a5;
+  --line:#eceff4;
+  --bg:#f6f3ef;
+}
+*,*::before,*::after{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  background:var(--bg);color:var(--ink);font-size:14px;line-height:1.6;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+  padding-bottom:calc(76px + env(safe-area-inset-bottom));
+}
+a{text-decoration:none;color:inherit}
+ul,li{list-style:none;margin:0;padding:0}
+h1,h2,h3,h4,p{margin:0}
+button{font-family:inherit;border:none;outline:none;background:none;color:inherit;cursor:pointer}
+svg{display:block}
+
+/* 顶部 */
+.hero{
+  position:relative;overflow:hidden;
+  background:linear-gradient(160deg,#8f1a24 0%,#b8232f 42%,#c9982a 100%);
+  color:#fff;padding:30px 20px 54px;text-align:center;
+}
+.hero::before{
+  content:"";position:absolute;inset:0;
+  background-image:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0L37 23L60 30L37 37L30 60L23 37L0 30L23 23Z' fill='%23ffffff' fill-opacity='0.05'/%3E%3C/svg%3E");
+  pointer-events:none;
+}
+.hero::after{
+  content:"";position:absolute;bottom:-2px;left:0;right:0;height:42px;
+  background:var(--bg);
+  clip-path:ellipse(75% 100% at 50% 100%);
+}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:6px;
+  font-size:11.5px;letter-spacing:1px;
+  padding:5px 16px;border-radius:30px;margin-bottom:16px;
+  background:rgba(255,255,255,.15);
+  border:1px solid rgba(255,255,255,.25);
+}
+.hero-badge svg{width:14px;height:14px}
+.hero h1{
+  font-size:26px;font-weight:800;letter-spacing:.8px;
+  line-height:1.35;position:relative;z-index:1;
+}
+.hero h1 em{
+  font-style:normal;
+  background:linear-gradient(180deg,#ffe28a,#e8b339);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  background-clip:text;
+}
+.hero-sub{
+  font-size:13px;opacity:.9;margin-top:12px;
+  letter-spacing:.5px;position:relative;z-index:1;
+}
+.hero-tags{
+  display:flex;justify-content:center;flex-wrap:wrap;gap:8px;
+  margin-top:18px;position:relative;z-index:1;
+}
+.hero-tags span{
+  font-size:11px;padding:4px 12px;border-radius:20px;
+  background:rgba(255,255,255,.14);
+  border:1px solid rgba(255,255,255,.2);
+}
+
+/* 关键信息 */
+.keyinfo{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  margin:-24px 16px 0;position:relative;z-index:5;
+  background:#fff;border-radius:16px;overflow:hidden;
+  box-shadow:0 8px 28px rgba(140,30,40,.12);
+}
+.keyinfo-item{padding:16px 6px;text-align:center;position:relative}
+.keyinfo-item+.keyinfo-item::before{
+  content:"";position:absolute;left:0;top:50%;transform:translateY(-50%);
+  width:1px;height:32px;background:var(--line);
+}
+.keyinfo-item b{
+  display:block;font-size:17px;font-weight:800;color:var(--red);line-height:1.2;
+}
+.keyinfo-item b i{font-size:11px;font-style:normal;font-weight:400;margin-left:1px;color:var(--ink-3)}
+.keyinfo-item span{font-size:11px;color:var(--ink-3);display:block;margin-top:4px}
+
+/* 通用 */
+.sec{margin:16px 16px 0}
+.sec-head{display:flex;align-items:center;gap:8px;margin-bottom:14px}
+.sec-head .bar{
+  width:4px;height:18px;border-radius:2px;
+  background:linear-gradient(180deg,var(--red),var(--gold));
+}
+.sec-head h2{font-size:17px;font-weight:700;letter-spacing:.5px}
+.sec-head .more{
+  margin-left:auto;font-size:12px;color:var(--ink-3);
+  display:flex;align-items:center;gap:2px;
+}
+.sec-head .more svg{width:12px;height:12px}
+
+/* 亮点卡片 */
+.highlight-card{
+  background:#fff;border-radius:16px;overflow:hidden;
+  margin-bottom:12px;
+  box-shadow:0 2px 12px rgba(140,30,40,.06);
+}
+.hl-cover{
+  height:108px;position:relative;overflow:hidden;
+  display:flex;align-items:center;justify-content:center;
+}
+.hl-cover .hl-icon{font-size:40px;opacity:.3}
+.hl-cover .hl-label{
+  position:absolute;top:12px;left:12px;
+  font-size:10.5px;padding:3px 10px;border-radius:20px;
+  color:#fff;background:rgba(0,0,0,.25);
+  -webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);
+}
+.hl-body{padding:14px 16px 16px}
+.hl-body h3{font-size:15px;font-weight:700;margin-bottom:6px}
+.hl-body p{font-size:12.5px;color:var(--ink-2);line-height:1.7}
+.hl-meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.hl-meta span{
+  font-size:11px;padding:2px 9px;border-radius:6px;
+  color:var(--jade);background:rgba(46,125,110,.08);
+}
+
+/* 行程 */
+.timeline{position:relative;padding-left:26px}
+.timeline::before{
+  content:"";position:absolute;left:7px;top:8px;bottom:8px;
+  width:2px;background:linear-gradient(180deg,var(--red),var(--gold),var(--jade));
+  border-radius:2px;
+}
+.tl-item{position:relative;padding-bottom:20px}
+.tl-item:last-child{padding-bottom:0}
+.tl-item::before{
+  content:"";position:absolute;left:-23px;top:6px;
+  width:10px;height:10px;border-radius:50%;
+  background:#fff;border:2.5px solid var(--red);
+  box-shadow:0 0 0 3px rgba(184,35,47,.1);
+}
+.tl-day{
+  display:inline-block;font-size:11px;font-weight:700;
+  padding:2px 10px;border-radius:6px;margin-bottom:6px;
+  color:#fff;background:linear-gradient(135deg,var(--red),var(--red-2));
+}
+.tl-item h4{font-size:14px;font-weight:600;margin-bottom:5px}
+.tl-item p{font-size:12.5px;color:var(--ink-2);line-height:1.7}
+.tl-item .tl-tag{
+  display:inline-block;font-size:10.5px;padding:1px 7px;
+  border-radius:4px;margin-right:5px;margin-top:4px;
+  color:var(--gold);background:rgba(201,152,42,.1);
+}
+
+/* 报名条件 */
+.cond-list{background:#fff;border-radius:16px;padding:4px 0;box-shadow:0 2px 12px rgba(140,30,40,.06)}
+.cond-item{
+  display:flex;align-items:flex-start;gap:12px;
+  padding:14px 16px;border-bottom:1px solid var(--line);
+}
+.cond-item:last-child{border-bottom:none}
+.cond-num{
+  width:26px;height:26px;border-radius:50%;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+  font-size:12px;font-weight:700;color:#fff;
+  background:linear-gradient(135deg,var(--red),var(--red-2));
+  margin-top:1px;
+}
+.cond-text h4{font-size:13.5px;font-weight:600;margin-bottom:3px}
+.cond-text p{font-size:12px;color:var(--ink-2);line-height:1.6}
+
+/* 表单 */
+.form-card{
+  background:#fff;border-radius:16px;padding:20px 16px;
+  box-shadow:0 2px 12px rgba(140,30,40,.06);
+}
+.form-group{margin-bottom:14px}
+.form-group label{
+  display:block;font-size:12.5px;font-weight:600;
+  color:var(--ink);margin-bottom:6px;
+}
+.form-group input,
+.form-group select{
+  width:100%;height:44px;padding:0 14px;
+  border:1.5px solid var(--line);border-radius:11px;
+  font-size:14px;color:var(--ink);
+  background:#fafbfc;transition:border-color .2s;
+  -webkit-appearance:none;appearance:none;
+}
+.form-group input:focus,
+.form-group select:focus{border-color:var(--red);background:#fff}
+.form-group input::placeholder{color:#b0bac6}
+.form-group select{
+  background-image:url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%238d97a5' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 14px center;
+}
+.submit-btn{
+  width:100%;height:48px;border-radius:14px;
+  font-size:16px;font-weight:700;color:#fff;
+  background:linear-gradient(135deg,#b8232f,#d94452);
+  box-shadow:0 6px 20px rgba(184,35,47,.3);
+  transition:transform .15s,box-shadow .15s;
+  margin-top:6px;
+}
+.submit-btn:active{transform:scale(.97);box-shadow:0 3px 10px rgba(184,35,47,.25)}
+
+/* 提示 */
+.tips{
+  margin:16px 16px 0;padding:16px;
+  background:linear-gradient(135deg,rgba(201,152,42,.06),rgba(184,35,47,.04));
+  border-radius:16px;border:1px solid rgba(201,152,42,.12);
+}
+.tips h4{
+  font-size:13.5px;font-weight:700;color:var(--gold);
+  display:flex;align-items:center;gap:6px;margin-bottom:10px;
+}
+.tips h4 svg{width:15px;height:15px}
+.tips ul li{
+  font-size:12px;color:var(--ink-2);line-height:1.8;
+  padding-left:14px;position:relative;
+}
+.tips ul li::before{
+  content:"";position:absolute;left:0;top:9px;
+  width:5px;height:5px;border-radius:50%;
+  background:var(--gold-2);opacity:.7;
+}
+
+/* 页脚 */
+.ft{
+  margin:24px 16px 0;padding:20px 0 8px;
+  border-top:1px solid var(--line);
+  text-align:center;color:var(--ink-3);font-size:11px;line-height:2;
+}
+.ft .ft-brand{
+  font-size:13px;font-weight:700;color:var(--red);
+  letter-spacing:1px;margin-bottom:4px;
+}
+
+/* 底部悬浮 */
+.bottom-bar{
+  position:fixed;left:0;right:0;bottom:0;z-index:100;
+  padding:10px 16px calc(10px + env(safe-area-inset-bottom));
+  background:rgba(255,255,255,.97);
+  -webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);
+  border-top:1px solid var(--line);
+  display:flex;align-items:center;gap:12px;
+}
+.bottom-bar .bb-left{flex:1}
+.bottom-bar .bb-left b{
+  display:block;font-size:15px;font-weight:800;color:var(--red);
+}
+.bottom-bar .bb-left span{font-size:11px;color:var(--ink-3)}
+.bb-btn{
+  padding:0 26px;height:46px;border-radius:14px;
+  font-size:15px;font-weight:700;color:#fff;
+  background:linear-gradient(135deg,#b8232f,#d94452);
+  box-shadow:0 4px 16px rgba(184,35,47,.3);
+  display:flex;align-items:center;gap:6px;
+  transition:transform .15s;
+}
+.bb-btn:active{transform:scale(.96)}
+.bb-btn svg{width:16px;height:16px}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-badge">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 2 15.09 8.26 22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01Z"/>
+    </svg>
+    吉林省语文教师专属 · 中文推广活动
+  </div>
+  <h1>十一延吉<br><em>中文推广之旅</em></h1>
+  <p class="hero-sub">吉林省语文老师可携带一位伙伴 · 免费旅行 · 每日最高500元现金补助</p>
+  <div class="hero-tags">
+    <span>📅 10月1日—7日</span>
+    <span>👥 可带1位伙伴</span>
+    <span>💰 每日最高500元</span>
+  </div>
+</header>
+
+<div class="keyinfo">
+  <div class="keyinfo-item">
+    <b>7<i>天</i></b>
+    <span>活动周期</span>
+  </div>
+  <div class="keyinfo-item">
+    <b>2<i>人</i></b>
+    <span>教师+伙伴</span>
+  </div>
+  <div class="keyinfo-item">
+    <b>500<i>元/天</i></b>
+    <span>最高补助</span>
+  </div>
+</div>
+
+<section class="sec">
+  <div class="sec-head">
+    <div class="bar"></div>
+    <h2>活动亮点</h2>
+  </div>
+
+  <div class="highlight-card">
+    <div class="hl-cover" style="background:linear-gradient(135deg,#8f1a24,#c9982a)">
+      <span class="hl-icon">🀄</span>
+      <span class="hl-label">中文推广</span>
+    </div>
+    <div class="hl-body">
+      <h3>中文推广主题交流</h3>
+      <p>围绕“中文推广与语文教学创新”开展主题论坛、示范课展示和教学沙龙，与全省优秀语文教师共同探讨中文教育的新路径。</p>
+      <div class="hl-meta">
+        <span>主题论坛</span><span>示范课</span><span>教学沙龙</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="highlight-card">
+    <div class="hl-cover" style="background:linear-gradient(135deg,#2e7d6e,#3fb894)">
+      <span class="hl-icon">🏯</span>
+      <span class="hl-label">文化体验</span>
+    </div>
+    <div class="hl-body">
+      <h3>延吉朝鲜族文化沉浸体验</h3>
+      <p>走进中国朝鲜族民俗园，体验传统服饰、打糕制作、长鼓舞与伽倻琴，感受中华文化多元一体的独特魅力。</p>
+      <div class="hl-meta">
+        <span>民俗园</span><span>传统服饰</span><span>打糕制作</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="highlight-card">
+    <div class="hl-cover" style="background:linear-gradient(135deg,#b8232f,#e8b339)">
+      <span class="hl-icon">💰</span>
+      <span class="hl-label">现金补助</span>
+    </div>
+    <div class="hl-body">
+      <h3>每日最高500元现金补助</h3>
+      <p>活动期间，符合条件的参与教师每日可申领最高500元现金补助，用于交通、餐饮、住宿等合理支出，具体以主办方财务规则为准。</p>
+      <div class="hl-meta">
+        <span>每日申领</span><span>最高500元</span><span>合规报销</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="highlight-card">
+    <div class="hl-cover" style="background:linear-gradient(135deg,#3c5aa6,#7089cf)">
+      <span class="hl-icon">👥</span>
+      <span class="hl-label">伙伴同行</span>
+    </div>
+    <div class="hl-body">
+      <h3>可携带一位伙伴共同参与</h3>
+      <p>每位入选教师可携带一位伙伴同行，伙伴同样享受免费旅行接待，一起体验延吉的中文推广活动与民俗风情。</p>
+      <div class="hl-meta">
+        <span>1位伙伴</span><span>免费接待</span><span>共同体验</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="sec-head">
+    <div class="bar"></div>
+    <h2>行程安排</h2>
+  </div>
+  <div class="timeline">
+    <div class="tl-item">
+      <span class="tl-day">DAY 1</span>
+      <h4>报到 · 中文推广活动启动</h4>
+      <p>全天报到，领取活动手册与补助申领说明；晚间举行中文推广活动启动仪式暨教师交流晚宴。</p>
+      <span class="tl-tag">报到</span><span class="tl-tag">启动仪式</span>
+    </div>
+    <div class="tl-item">
+      <span class="tl-day">DAY 2</span>
+      <h4>中文推广主题论坛 · 示范课</h4>
+      <p>上午：中文推广与语文教学创新主题论坛；下午：优秀教师示范课展示与评课交流。</p>
+      <span class="tl-tag">主题论坛</span><span class="tl-tag">示范课</span>
+    </div>
+    <div class="tl-item">
+      <span class="tl-day">DAY 3</span>
+      <h4>朝鲜族文化体验 · 民俗园</h4>
+      <p>前往中国朝鲜族民俗园，体验传统服饰、打糕制作、长鼓舞学习，观看非遗民俗展演。</p>
+      <span class="tl-tag">民俗园</span><span class="tl-tag">非遗展演</span>
+    </div>
+    <div class="tl-item">
+      <span class="tl-day">DAY 4-5</span>
+      <h4>延吉文化采风 · 自由探索</h4>
+      <p>推荐路线：延边博物馆、帽儿山国家森林公园、延吉1978文创园、水上市场。教师可与伙伴自由安排文化采风。</p>
+      <span class="tl-tag">延边博物馆</span><span class="tl-tag">帽儿山</span><span class="tl-tag">文创园</span>
+    </div>
+    <div class="tl-item">
+      <span class="tl-day">DAY 6-7</span>
+      <h4>成果分享 · 结营返程</h4>
+      <p>中文推广教学成果分享会，颁发活动纪念证书，办理补助结算，自由返程。</p>
+      <span class="tl-tag">成果分享</span><span class="tl-tag">补助结算</span>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="sec-head">
+    <div class="bar"></div>
+    <h2>报名条件</h2>
+  </div>
+  <div class="cond-list">
+    <div class="cond-item">
+      <div class="cond-num">1</div>
+      <div class="cond-text">
+        <h4>身份要求</h4>
+        <p>吉林省内中小学在职语文教师，持有有效教师资格证。</p>
+      </div>
+    </div>
+    <div class="cond-item">
+      <div class="cond-num">2</div>
+      <div class="cond-text">
+        <h4>伙伴同行</h4>
+        <p>每位入选教师可携带一位伙伴，伙伴需与教师一同报名，信息真实有效。</p>
+      </div>
+    </div>
+    <div class="cond-item">
+      <div class="cond-num">3</div>
+      <div class="cond-text">
+        <h4>参与要求</h4>
+        <p>需全程参与中文推广活动及主题论坛，返程后提交一篇300字以上的文化体验心得。</p>
+      </div>
+    </div>
+    <div class="cond-item">
+      <div class="cond-num">4</div>
+      <div class="cond-text">
+        <h4>补助说明</h4>
+        <p>每日最高500元现金补助，按实际参与天数和主办方财务规则申领，需提供合规凭证。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="sec-head">
+    <div class="bar"></div>
+    <h2>立即报名</h2>
+  </div>
+  <div class="form-card">
+    <div class="form-group">
+      <label>教师姓名</label>
+      <input type="text" id="f-name" placeholder="请输入您的真实姓名">
+    </div>
+    <div class="form-group">
+      <label>手机号码</label>
+      <input type="tel" id="f-phone" placeholder="请输入手机号码" maxlength="11">
+    </div>
+    <div class="form-group">
+      <label>所在学校</label>
+      <input type="text" id="f-school" placeholder="请输入您任教的学校名称">
+    </div>
+    <div class="form-group">
+      <label>任教年级</label>
+      <select id="f-grade">
+        <option value="">请选择</option>
+        <option>小学低年级（1-3年级）</option>
+        <option>小学高年级（4-6年级）</option>
+        <option>初中</option>
+        <option>高中</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>同行伙伴姓名</label>
+      <input type="text" id="f-partner" placeholder="请输入同行伙伴姓名">
+    </div>
+    <button class="submit-btn" id="submitBtn">提交报名申请</button>
+  </div>
+</section>
+
+<div class="tips">
+  <h4>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/>
+    </svg>
+    温馨提示
+  </h4>
+  <ul>
+    <li>活动期间交通、住宿、餐饮由主办方统一安排，教师与伙伴均免费。</li>
+    <li>现金补助每日最高500元，按活动实际参与天数申领，需符合财务合规要求。</li>
+    <li>请携带教师资格证原件及身份证原件，用于现场核验。</li>
+    <li>延吉十月初气温约5-15℃，请携带保暖外套。</li>
+    <li>报名成功后，工作人员将在48小时内电话确认。</li>
+    <li>本页面为活动宣传展示，具体细则以主办方官方公告为准。</li>
+  </ul>
+</div>
+
+<footer class="ft">
+  <div class="ft-brand">延吉中文推广活动 · 吉林省语文教师专属</div>
+  <p>主办单位：延吉市文化旅游局 · 延边州语文教学研究会</p>
+  <p>协办单位：中国朝鲜族民俗园 · 延边博物馆</p>
+  <p>咨询电话：0433-XXXXXXX（工作日 9:00-17:00）</p>
+</footer>
+
+<div class="bottom-bar">
+  <div class="bb-left">
+    <b>免费旅行 + 现金补助</b>
+    <span>可带1位伙伴，名额有限</span>
+  </div>
+  <button class="bb-btn" onclick="document.getElementById('submitBtn').click()">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M5 12h14M12 5l7 7-7 7"/>
+    </svg>
+    立即报名
+  </button>
+</div>
+
+<script>
+(function(){
+  'use strict';
+
+  var submitBtn = document.getElementById('submitBtn');
+  var nameEl = document.getElementById('f-name');
+  var phoneEl = document.getElementById('f-phone');
+  var schoolEl = document.getElementById('f-school');
+  var gradeEl = document.getElementById('f-grade');
+  var partnerEl = document.getElementById('f-partner');
+
+  function toast(msg, ok){
+    var d = document.createElement('div');
+    d.textContent = msg;
+    d.style.cssText = 'position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);' +
+      'background:' + (ok ? '#2e7d6e' : '#b8232f') + ';color:#fff;padding:12px 24px;' +
+      'border-radius:10px;font-size:14px;z-index:9999;opacity:0;transition:opacity .3s;' +
+      'max-width:80%;text-align:center;line-height:1.6;box-shadow:0 8px 24px rgba(0,0,0,.2)';
+    document.body.appendChild(d);
+    requestAnimationFrame(function(){ d.style.opacity = '1'; });
+    setTimeout(function(){
+      d.style.opacity = '0';
+      setTimeout(function(){ d.remove(); }, 300);
+    }, 2200);
+  }
+
+  submitBtn.addEventListener('click', function(){
+    var name = nameEl.value.trim();
+    var phone = phoneEl.value.trim();
+    var school = schoolEl.value.trim();
+    var grade = gradeEl.value;
+    var partner = partnerEl.value.trim();
+
+    if (!name) { toast('请填写教师姓名'); nameEl.focus(); return; }
+    if (!phone || !/^1[3-9]\d{9}$/.test(phone)) { toast('请填写正确的手机号码'); phoneEl.focus(); return; }
+    if (!school) { toast('请填写所在学校'); schoolEl.focus(); return; }
+    if (!grade) { toast('请选择任教年级'); gradeEl.focus(); return; }
+    if (!partner) { toast('请填写同行伙伴姓名'); partnerEl.focus(); return; }
+
+    submitBtn.textContent = '提交中...';
+    submitBtn.disabled = true;
+
+    setTimeout(function(){
+      toast('报名成功！工作人员将在48小时内与您联系', true);
+      submitBtn.textContent = '已提交 ✓';
+      submitBtn.style.background = 'linear-gradient(135deg,#2e7d6e,#3fb894)';
+    }, 800);
+  });
+
+})();
+</script>
+</body>
+</html>
